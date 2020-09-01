@@ -9,5 +9,5 @@ import { DataUris } from './icons/img-src-data-uris';
 export class AppComponent {
   title = 'Joshua Kemmerer';
   imgDataUris = DataUris;
-  commonLayoutGap = '20px';
+  commonLayoutGap = '.10in';
 }

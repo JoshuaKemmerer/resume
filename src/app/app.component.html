@@ -1,278 +1,300 @@
 <!-- Header -->
-<div class="header" role="banner">
-  <div class="main-title">
-    <span>Joshua Kemmerer</span>
-  </div>
-
-  <div class="contact-info" fxLayout="row wrap" [fxLayoutGap]="commonLayoutGap">
-    <div>
-      <span>joshkemm@gmail.com</span>
-    </div>
-
-    <div>
-      <span>267-810-7239</span>
-    </div>
-  </div>
-
-  <div class="story">
-    Hi! I have been a developer for the past seven years since I started working on my B.S. in
-    Computer Science at BCCC and then Drexel University. I had two six-month long internships during
-    my educational period, creating and improving both complex and simple applications for both a
-    small toy-manufacturing company and a multi-million dollar organization that manages personal
-    finances. I graduated and started my post-grad employment with the Phillies baseball team.
-  </div>
-</div>
-
-<div class="content" role="main">
-  <!-- Experience -->
-  <div class="experience-container">
-    <div class="experience-title-container">
-      <span>Experience</span>
-    </div>
-
-    <div class="experience-rows-container">
-      <div class="current-employment-container">
-        <app-employment-item
-          employer="Yocum Technology Group"
-          endDateText="Present"
-          locationText="Philadelphia, PA"
-          role="Software Developer"
-          startDateText="Sep 2019"
-        >
-          <div detail-item>
-            Converted the UI of a legacy enterprise Web application from
-            <span class="technical-term">ASP.NET</span> to
-            <span class="technical-term">Angular 7</span> for an S&P 100 Company
-          </div>
-
-          <div detail-item>
-            Completed more than 700 <span class="technical-term">Azure DevOps</span> work items from
-            the project in the span of a year, over 20% more than the second-most productive
-            employee
-          </div>
-
-          <div detail-item>
-            Lead the development of the UI for a Web application to administrate the company's user
-            permissions
-          </div>
-        </app-employment-item>
+<div class="resume-page">
+  <div class="header" role="banner">
+    <div fxLayout="row" fxLayoutGap="20px">
+      <div class="headshot">
+        <img src="../assets/2in-square-cropped-headshot.jpg" class="headshot-img" />
       </div>
 
-      <div class="previous-employment-container">
-        <app-employment-item
-          employer="Phillies"
-          endDateText="Sep 2019"
-          locationText="Philadelphia, PA"
-          role="Software Developer"
-          startDateText="Aug 2017"
-        >
-          <div detail-item>
-            Designed, developed, and maintained over ten
-            <span class="technical-term">Angular</span> web applications for automating data entry
-            and retrieval
-          </div>
-
-          <div detail-item>
-            Completed a complex API certification to develop a custom Point-of-Sales, saving the
-            Phillies over $20,000 in the first year
-          </div>
-
-          <div detail-item>
-            Deployed applications and utilities to cloud providers such as
-            <span class="technical-term">AWS</span> and <span class="technical-term">Azure</span> to
-            save the Phillies from self-hosting costs and maintenance
-          </div>
-
-          <div detail-item>
-            Generated the latitude and longitude of every seat in the Phillies ballpark to provide a
-            real-time, dynamic, and interactive visualization
-          </div>
-        </app-employment-item>
-      </div>
-
-      <div class="previous-employment-container">
-        <app-employment-item
-          employer="eMoney Advisor"
-          endDateText="Mar"
-          locationText="Radnor, PA"
-          role="Software Developer - Intern"
-          startDateText="Sep 2016"
-        >
-          <div detail-item>
-            Developed features for partner installations in a
-            <span class="technical-term">Kanban</span>-style, contributing to more than 75% of the
-            throughput
-          </div>
-
-          <div detail-item>
-            Reduced the time to develop new pages by 50% through refactoring the site navigation
-            from <span class="technical-term">ASP.NET</span> to
-            <span class="technical-term">MVC</span>
-          </div>
-
-          <div detail-item>
-            Designed and developed an administrative tool to visualize flag configuration files in
-            an effective and user-friendly format
-          </div>
-        </app-employment-item>
-      </div>
-
-      <div class="previous-employment-container">
-        <app-employment-item
-          employer="K'NEX Industries"
-          endDateText="Mar"
-          locationText="Hatfield, PA"
-          role="Software Developer - Intern"
-          startDateText="Sep 2015"
-        >
-          <div detail-item>
-            Developed software on an <span class="technical-term">ASP.NET</span> Web application for
-            the company’s IT department
-          </div>
-
-          <div detail-item>
-            Created a shopping-cart system for a Web app to allow businesses to download product
-            images
-          </div>
-
-          <div detail-item>
-            Designed and implemented a Web-based FTP server to share multi-GB files with
-            authenticated users
-          </div>
-
-          <div detail-item>
-            Produced a website for Marketing to increase customer engagement by sending products to
-            bloggers and tracking their reviews
-          </div>
-
-          <div detail-item>
-            Integrated new libraries into the company's applications, including
-            <span class="technical-term">Dropzone JS</span>,
-            <span class="technical-term">Dapper ORM</span>, and
-            <span class="technical-term">JSON.NET</span>
-          </div>
-        </app-employment-item>
-      </div>
-    </div>
-  </div>
-
-  <!-- Programming Languages -->
-  <div class="programming-languages-container">
-    <div class="programming-languages-header">
-      <span>Programming Languages</span>
-    </div>
-
-    <div class="languages-container">
-      <!-- C# -->
-      <app-language-skill-item>C#</app-language-skill-item>
-
-      <!-- Java -->
-      <app-language-skill-item>Java</app-language-skill-item>
-
-      <!-- Typescript -->
-      <app-language-skill-item>Typescript</app-language-skill-item>
-
-      <!-- Javascript -->
-      <app-language-skill-item>Javascript</app-language-skill-item>
-
-      <!-- SQL -->
-      <app-language-skill-item>SQL</app-language-skill-item>
-
-      <!-- PHP -->
-      <app-language-skill-item>PHP</app-language-skill-item>
-
-      <!-- Python -->
-      <app-language-skill-item>Python</app-language-skill-item>
-
-      <!-- jQuery -->
-      <app-language-skill-item>jQuery</app-language-skill-item>
-
-      <!-- Haskell -->
-      <app-language-skill-item>Haskell</app-language-skill-item>
-
-      <!-- C -->
-      <app-language-skill-item>C</app-language-skill-item>
-
-      <!-- Clojure -->
-      <app-language-skill-item>Clojure</app-language-skill-item>
-    </div>
-  </div>
-
-  <!-- Technologies & Frameworks -->
-  <div class="technologies-frameworks-container">
-    <div class="technologies-frameworks-header">
-      <span>Technologies & Frameworks</span>
-    </div>
-
-    <div class="tecnologies-container">
-      <!-- Angular -->
-      <app-skill-icon
-        [imgSrc]="imgDataUris.Angular"
-        altImageText="Angular Skill Icon"
-        link="https://angular.io"
-        text="Angular"
-      ></app-skill-icon>
-
-      <!-- .NET Core -->
-      <app-skill-icon
-        [imgSrc]="imgDataUris.DotNetCore"
-        altImageText="Dotnet Core Skill Icon"
-        link="https://github.com/dotnet/core"
-        text=".NET Core"
-      ></app-skill-icon>
-
-      <!-- Visual Studio -->
-      <app-skill-icon [imgSrc]="" altImageText="" link="" text="Visual Studio"></app-skill-icon>
-
-      <!-- AWS -->
-      <app-skill-icon [imgSrc]="" altImageText="" link="" text="AWS"></app-skill-icon>
-
-      <!-- Azure -->
-      <app-skill-icon [imgSrc]="" altImageText="" link="" text="Azure"></app-skill-icon>
-
-      <!-- MS SQL -->
-      <app-skill-icon [imgSrc]="" altImageText="" link="" text="MS SQL"></app-skill-icon>
-
-      <!-- Git -->
-      <app-skill-icon [imgSrc]="" altImageText="" link="" text="Git"></app-skill-icon>
-
-      <!-- Eclipse -->
-      <app-skill-icon [imgSrc]="" altImageText="" link="" text="Eclipse"></app-skill-icon>
-
-      <!-- MySQL -->
-      <app-skill-icon [imgSrc]="" altImageText="" link="" text="MySQL"></app-skill-icon>
-
-      <!-- Android -->
-      <app-skill-icon [imgSrc]="" altImageText="" link="" text="Android"></app-skill-icon>
-
-      <!-- Bootstrap -->
-      <app-skill-icon [imgSrc]="" altImageText="" link="" text="Bootstrap"></app-skill-icon>
-    </div>
-  </div>
-
-  <!-- Education -->
-  <div class="education-container">
-    <div class="education-title-container">
-      <span>Education</span>
-    </div>
-
-    <div class="education-rows-container">
-      <app-education-item
-        cumulativeGpa="Cumulative GPA 3.78"
-        degree="B.S. in Computer Science"
-        graduationMonthYear="June 2017"
-        location="Philadelphia, PA"
-        school="Drexel University"
-      >
-        <div detail-item>Concentration: Software Engineering, Data Structures and Algorithms</div>
-        <div detail-item>
-          Awards: Dean’s Academic Scholarship (2014-2016), Phi Theta Kappa Scholarship (2015),
-          Trustee Award (2014-2015), President’s Honor List (2012-2016), graduated Magna Cum Laude
+      <div class="header-info">
+        <div class="main-title">
+          <span>Joshua Kemmerer</span>
         </div>
-      </app-education-item>
+
+        <div class="contact-info" fxLayout="row">
+          <div>
+            <a href="https://www.linkedin.com/in/joshuakemmerer/">linkedin.com/in/joshuakemmerer</a>
+          </div>
+
+          <app-info-separator></app-info-separator>
+
+          <div>
+            <span>joshkemm@gmail.com</span>
+          </div>
+
+          <app-info-separator></app-info-separator>
+
+          <div>
+            <span>267-810-7239</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="story">
+      Hi! I have been a developer for the past seven years since I started working on my B.S. in
+      Computer Science at BCCC and then Drexel University. I had two six-month long internships
+      during my educational period, creating and improving both complex and simple applications for
+      both a small toy-manufacturing company and a multi-million dollar organization that manages
+      personal finances. I graduated and started my post-grad employment with the Phillies baseball
+      team.
     </div>
   </div>
-</div>
 
-<!-- Footer -->
-<footer></footer>
+  <div role="main" class="content">
+    <!-- Experience -->
+    <div class="experience-container">
+      <div class="experience-header">
+        <span>Experience</span>
+      </div>
+
+      <div class="experience-rows-container">
+        <div class="current-employment-container">
+          <app-employment-item
+            employer="Yocum Technology Group"
+            endDateText="Present"
+            locationText="Philadelphia, PA"
+            role="Software Developer"
+            startDateText="Sep 2019"
+          >
+            <div detail-item>
+              Converted the UI of a legacy enterprise Web application from
+              <span class="technical-term">ASP.NET</span> to
+              <span class="technical-term">Angular 7</span> for an S&P 100 Company
+            </div>
+
+            <div detail-item>
+              Completed more than 700 <span class="technical-term">Azure DevOps</span> work items
+              from the project in the span of a year, over 20% more than the second-most productive
+              employee
+            </div>
+
+            <div detail-item>
+              Lead the development of the UI for a Web application to administrate the company's
+              user permissions
+            </div>
+          </app-employment-item>
+        </div>
+
+        <div class="previous-employment-container">
+          <app-employment-item
+            employer="Phillies"
+            endDateText="Sep 2019"
+            locationText="Philadelphia, PA"
+            role="Software Developer"
+            startDateText="Aug 2017"
+          >
+            <div detail-item>
+              Designed, developed, and maintained over ten
+              <span class="technical-term">Angular</span> web applications for automating data entry
+              and retrieval
+            </div>
+
+            <div detail-item>
+              Completed a complex API certification to develop a custom Point-of-Sales, saving the
+              Phillies $20,000+ in the first year
+            </div>
+
+            <div detail-item>
+              Deployed applications and utilities to cloud providers such as
+              <span class="technical-term">AWS</span> and
+              <span class="technical-term">Azure</span> to increase availability and reliability
+            </div>
+
+            <div detail-item>
+              Generated the latitude and longitude of every seat in the Phillies ballpark to provide
+              a real-time, dynamic, and interactive visualization
+            </div>
+          </app-employment-item>
+        </div>
+
+        <div class="previous-employment-container">
+          <app-employment-item
+            employer="eMoney Advisor"
+            endDateText="Sep 2016"
+            locationText="Radnor, PA"
+            role="Software Developer - Intern"
+            startDateText="Mar"
+          >
+            <div detail-item>
+              Developed features for partner installations in a
+              <span class="technical-term">Kanban</span>-style, contributing to more than 75% of the
+              throughput
+            </div>
+
+            <div detail-item>
+              Reduced the time to develop new pages by 50% through refactoring the site navigation
+              from <span class="technical-term">ASP.NET</span> to
+              <span class="technical-term">MVC</span>
+            </div>
+
+            <div detail-item>
+              Designed and developed an administrative tool to visualize configuration files in an
+              effective and user-friendly format
+            </div>
+          </app-employment-item>
+        </div>
+
+        <div class="previous-employment-container">
+          <app-employment-item
+            employer="K'NEX Industries"
+            endDateText="Sep 2015"
+            locationText="Hatfield, PA"
+            role="Software Developer - Intern"
+            startDateText="Mar"
+          >
+            <div detail-item>
+              Enhanced an <span class="technical-term">ASP.NET</span> Web application for the
+              company’s IT department
+            </div>
+
+            <div detail-item>
+              Created a shopping-cart system for a Web app to allow businesses to download product
+              images
+            </div>
+
+            <div detail-item>
+              Designed and implemented a Web-based FTP server to share multi-GB files with
+              authenticated users
+            </div>
+
+            <div detail-item>
+              Developed an app to increase customer engagement by sending products to bloggers and
+              tracking their reviews
+            </div>
+
+            <div detail-item>
+              Integrated new libraries into the company's applications, including
+              <span class="technical-term">Dropzone JS</span>,
+              <span class="technical-term">Dapper ORM</span>, and
+              <span class="technical-term">JSON.NET</span>
+            </div>
+          </app-employment-item>
+        </div>
+      </div>
+    </div>
+
+    <!-- Programming Languages -->
+    <div class="programming-languages-container">
+      <div class="programming-languages-header">
+        <span>Programming Languages</span>
+      </div>
+
+      <div class="list-container">
+        <!-- C# -->
+        <app-language-skill-item>C#</app-language-skill-item>
+
+        <!-- Java -->
+        <app-language-skill-item>Java</app-language-skill-item>
+
+        <!-- Typescript -->
+        <app-language-skill-item>Typescript</app-language-skill-item>
+
+        <!-- Javascript -->
+        <app-language-skill-item>Javascript</app-language-skill-item>
+
+        <!-- SQL -->
+        <app-language-skill-item>SQL</app-language-skill-item>
+
+        <!-- PHP -->
+        <app-language-skill-item>PHP</app-language-skill-item>
+
+        <!-- Python -->
+        <app-language-skill-item>Python</app-language-skill-item>
+
+        <!-- jQuery -->
+        <app-language-skill-item>jQuery</app-language-skill-item>
+
+        <!-- Haskell -->
+        <app-language-skill-item>Haskell</app-language-skill-item>
+
+        <!-- C -->
+        <app-language-skill-item>C</app-language-skill-item>
+
+        <!-- Clojure -->
+        <app-language-skill-item>Clojure</app-language-skill-item>
+      </div>
+    </div>
+
+    <!-- Technologies & Frameworks -->
+    <div class="technologies-frameworks-container">
+      <div class="technologies-frameworks-header">
+        <span>Technologies & Frameworks</span>
+      </div>
+
+      <div class="list-container">
+        <!-- Angular -->
+        <app-skill-icon
+          [imgSrc]="imgDataUris.Angular"
+          altImageText="Angular Skill Icon"
+          link="https://angular.io"
+          text="Angular"
+        ></app-skill-icon>
+
+        <!-- .NET Core -->
+        <app-skill-icon
+          [imgSrc]="imgDataUris.DotNetCore"
+          altImageText="Dotnet Core Skill Icon"
+          link="https://github.com/dotnet/core"
+          text=".NET Core"
+        ></app-skill-icon>
+
+        <!-- Visual Studio -->
+        <app-skill-icon [imgSrc]="" altImageText="" link="" text="Visual Studio"></app-skill-icon>
+
+        <!-- AWS -->
+        <app-skill-icon [imgSrc]="" altImageText="" link="" text="AWS"></app-skill-icon>
+
+        <!-- Azure -->
+        <app-skill-icon [imgSrc]="" altImageText="" link="" text="Azure"></app-skill-icon>
+
+        <!-- MS SQL -->
+        <app-skill-icon [imgSrc]="" altImageText="" link="" text="MS SQL"></app-skill-icon>
+
+        <!-- Git -->
+        <app-skill-icon [imgSrc]="" altImageText="" link="" text="Git"></app-skill-icon>
+
+        <!-- Eclipse -->
+        <app-skill-icon [imgSrc]="" altImageText="" link="" text="Eclipse"></app-skill-icon>
+
+        <!-- MySQL -->
+        <app-skill-icon [imgSrc]="" altImageText="" link="" text="MySQL"></app-skill-icon>
+
+        <!-- Android -->
+        <app-skill-icon [imgSrc]="" altImageText="" link="" text="Android"></app-skill-icon>
+
+        <!-- Bootstrap -->
+        <app-skill-icon [imgSrc]="" altImageText="" link="" text="Bootstrap"></app-skill-icon>
+      </div>
+    </div>
+
+    <!-- Education -->
+    <div class="education-container">
+      <div class="education-header">
+        <span>Education</span>
+      </div>
+
+      <div class="education-rows-container">
+        <app-education-item
+          cumulativeGpa="Cumulative GPA 3.78"
+          degree="B.S. in Computer Science"
+          graduationMonthYear="June 2017"
+          location="Philadelphia, PA"
+          school="Drexel University"
+        >
+          <div detail-item>
+            Concentration: Software Engineering, Data Structures and Algorithms
+          </div>
+
+          <div detail-item>
+            Awards: Dean’s Academic Scholarship (2014-2016), Phi Theta Kappa Scholarship (2015),
+            Trustee Award (2014-2015), President’s Honor List (2012-2016), graduated Magna Cum Laude
+          </div>
+        </app-education-item>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer></footer>
+</div>

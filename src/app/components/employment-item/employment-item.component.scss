@@ -1,0 +1,23 @@
+@import 'src/assets/styles/fonts.scss';
+@import 'src/assets/styles/spacing.scss';
+
+.employment-container {
+  padding-bottom: $default-padding-unit * 2;
+}
+
+.employment-header {
+  padding: $sub-section-header-padding;
+}
+
+.role-with-employer {
+  display: flex;
+}
+
+.employer {
+  font-size: $item-header-font-size;
+  font-weight: $item-header-font-weight;
+}
+
+.date-location {
+  display: flex;
+}

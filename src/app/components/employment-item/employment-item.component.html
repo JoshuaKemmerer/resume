@@ -1,12 +1,16 @@
 <div class="employment-container">
-  <div class="role-with-employer">
-    <div class="employer">{{ employer }}</div>
-    <div class="role">{{ role }}</div>
-  </div>
+  <div fxLayout="row" fxLayoutAlign="space-between" class="employment-header">
+    <div class="role-with-employer">
+      <div class="employer">{{ employer }}</div>
+      <app-info-separator></app-info-separator>
+      <div class="role">{{ role }}</div>
+    </div>
 
-  <div class="date-location">
-    <div class="date">{{ startDateText }} - {{ endDateText }}</div>
-    <div class="location">{{ locationText }}</div>
+    <div class="date-location">
+      <div class="date">{{ startDateText }} - {{ endDateText }}</div>
+      <app-info-separator></app-info-separator>
+      <div class="location">{{ locationText }}</div>
+    </div>
   </div>
 
   <div class="details-container">
