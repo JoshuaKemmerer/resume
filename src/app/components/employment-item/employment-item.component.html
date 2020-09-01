@@ -1,0 +1,15 @@
+<div class="employment-container">
+  <div class="role-with-employer">
+    <div class="employer">{{ employer }}</div>
+    <div class="role">{{ role }}</div>
+  </div>
+
+  <div class="date-location">
+    <div class="date">{{ startDateText }} - {{ endDateText }}</div>
+    <div class="location">{{ locationText }}</div>
+  </div>
+
+  <div class="details-container">
+    <ng-content select="[detail-item]"></ng-content>
+  </div>
+</div>

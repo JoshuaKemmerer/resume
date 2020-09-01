@@ -1,0 +1,19 @@
+<div class="education-container">
+  <div class="school-degree">
+    <div>
+      <span class="school">{{ school }}</span>
+      <span class="location">{{ location }}</span>
+    </div>
+
+    <div class="degree">{{ degree }}</div>
+  </div>
+
+  <div class="graduation-gpa">
+    <div class="graduation">{{ graduationMonthYear }}</div>
+    <div class="gpa">{{ cumulativeGpa }}</div>
+  </div>
+
+  <div class="details-container">
+    <ng-content select="[detail-item]"></ng-content>
+  </div>
+</div>
