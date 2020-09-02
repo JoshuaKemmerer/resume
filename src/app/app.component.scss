@@ -4,9 +4,11 @@
 /* Custom Styles */
 .resume-page {
   background: white;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  height: 11in;
   margin: 0 auto;
   width: 8.5in;
-  height: 11in;
 }
 
 .main-title {
@@ -17,7 +19,7 @@
 
 .header {
   padding: 0.15in;
-  background: #ddddf1;
+  background: #dadada;
 }
 
 .headshot {
@@ -41,15 +43,21 @@
   flex-wrap: wrap;
 }
 
-/* Experience Section Styles */
-.experience-container {
-  padding: $section-container-padding;
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
-.experience-header {
+.section-header {
   padding: $section-header-padding;
   font-size: $section-header-font-size;
   font-weight: $section-header-font-weight;
+}
+
+/* Experience Section Styles */
+.experience-container {
+  padding: $section-container-padding;
 }
 
 /* Programming Languages Section Styles */
@@ -57,32 +65,14 @@
   padding: $section-container-padding;
 }
 
-.programming-languages-header {
-  padding: $section-header-padding;
-  font-size: $section-header-font-size;
-  font-weight: $section-header-font-weight;
-}
-
 /* Technologies & Frameworks Section Styles */
 .technologies-frameworks-container {
   padding: $section-container-padding;
 }
 
-.technologies-frameworks-header {
-  padding: $section-header-padding;
-  font-size: $section-header-font-size;
-  font-weight: $section-header-font-weight;
-}
-
 /* Education Section Styles */
 .education-container {
-  padding: $section-container-padding;
-}
-
-.education-header {
-  padding: $section-header-padding;
-  font-size: $section-header-font-size;
-  font-weight: $section-header-font-weight;
+  padding: 0 0.15in 0.15in 0.15in;
 }
 
 @page {
