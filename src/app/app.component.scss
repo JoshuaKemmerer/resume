@@ -11,19 +11,92 @@
   width: 8.5in;
 }
 
-.main-title {
-  font-size: 0.25in;
-  font-weight: 700;
-  padding-bottom: $default-padding-unit;
-}
-
 .header {
-  padding: 0.15in;
   background: #dadada;
-}
 
-.headshot {
-  padding: $default-padding-unit;
+  display: grid;
+  grid-template-columns: 1.25in 1fr;
+  grid-template-rows: 1.25in 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    'top-row-image top-row-most-important-info'
+    'resume-description resume-description';
+
+  .top-row-image {
+    grid-area: top-row-image;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .top-row-most-important-info {
+    grid-area: top-row-most-important-info;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      'name name'
+      'email contact-number'
+      'profile-link location';
+
+    .name {
+      grid-area: name;
+
+      font-size: 0.25in;
+      font-weight: 700;
+      padding-bottom: $default-padding-unit;
+      padding-left: 0.1in;
+      padding-top: 0.07in;
+      display: grid;
+      align-items: center;
+    }
+
+    .email {
+      grid-area: email;
+    }
+
+    .contact-number {
+      grid-area: contact-number;
+    }
+
+    .profile-link {
+      grid-area: profile-link;
+    }
+
+    .location {
+      grid-area: location;
+    }
+
+    .info-detail-item {
+      display: flex;
+    }
+
+    .info-icon {
+      width: 0.4in;
+      height: 0.4in;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .info-value {
+      display: flex;
+      align-items: center;
+      font-weight: 500;
+    }
+  }
+
+  .resume-description {
+    grid-area: resume-description;
+
+    text-align: center;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
 
 .headshot-img {
